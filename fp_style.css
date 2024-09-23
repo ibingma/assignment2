@@ -1,0 +1,121 @@
+@charset "utf-8"
+/*
+   This file contains the base styles used by the first page.
+	
+	Author: Ibing Maharlika
+   Date: 9/23/24
+*/
+
+/* =============================================
+	HTML5 structural elements
+   =============================================
+*/
+
+article, aside, details, dl, figcaption, figure, footer, header, hgroup, main, nav, section {
+	display: block;
+}
+
+
+/* =============================================
+	Default colors, margins and sizing
+   =============================================
+*/
+
+html {	
+	background-color:hsl(132, 4%,70%);	
+}
+
+body { /*Center the body position*/
+	margin-left: auto;
+   margin-right: auto;
+}
+
+/* Horzontal Navigation Bar */
+nav.horizontalNavigation a {
+   font-family: 'Roboto';   
+	/*font-size: 1.2em;*/
+	font-size:clamp(1em, 1vw, 1.5em); /*responsive text (min, preferred, max)*/
+   line-height: 2.8em;
+   text-decoration:none;
+	color: rgb(78,88,54);	
+}  	
+
+nav.horizontalNavigation a:hover, 
+nav.horizontalNavigation a:active {
+   text-decoration: underline;
+	opacity:0.8;
+}
+
+nav.horizontalNavigation li {
+	text-align: center;
+}
+
+/* Right Column Text Setting */
+section#rightColumn h1 {	
+	font-family:'Roboto', san-serif;
+	color: rgb(78,88,54);
+	/*font-size:2.5em;	*/
+	font-size: clamp(1.8em, 2vw, 2.5em);
+	
+}
+
+section#rightColumn p {	
+	font-family:'Roboto', san-serif;
+	color: rgb(0, 0,0);
+	/*font-size: 1.2em;*/
+	font-size: clamp(0.9em, 2vw, 1.2em);
+	line-height: 1.40em;
+}
+
+/* Footer Setting */
+body > footer {
+	/*font-size: 0.9em;  */
+	font-size:clamp(0.6em, 2vw, 0.9em);
+	color:hsl(132,11%,70%);
+}
+
+body > footer h1 {   
+	color:hsl(38,42%,70%);	
+   font-size: 1.1em;
+	font-weight: normal;
+   letter-spacing: 0.1em;
+   margin: 1em 0 0.5em 0.6em;
+}
+
+section#copyRight {
+	text-align: center;	
+	font-size:0.9em;	
+}
+	
+	/* Footer Vertical Navigation Styles */
+nav.verticalNavigation ul {
+   margin-left: 0.7em;
+   line-height: 2em;	
+}
+
+ nav.verticalNavigation a {	
+	color:hsl(132,11%,70%)!important;
+	text-decoration:none;
+}
+
+nav.verticalNavigation a:link, 
+nav.verticalNavigation a:visited {
+   color: rgb(186, 186, 156);
+}
+
+nav.verticalNavigation a:hover, 
+nav.verticalNavigation a:active {
+   text-decoration: underline;
+}
+
+.btn {
+	color:hsla(72, 24%, 20%, 70%);
+	font-size: 1.1em;
+}
+
+	/* Footer Contact Info Styles */
+section#contactInfo p {
+   line-height: 1.5em;
+   margin-left: 0.8em;	
+	
+}   

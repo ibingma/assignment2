@@ -1,0 +1,119 @@
+@charset "utf8";
+/*
+   This file contains the layout settings used by the first page. The layout concept 
+	is based on the floating system.
+	
+	Author: Ibing Maharlika
+   Date: 9/23/24
+*/
+
+html {
+	height: 100%;	
+}
+
+body {  
+   height: 100vh; /* Full height of the viewport */
+	min-height:100%; /*set minimum height to match browser window full height*/
+	max-width: 1024px;
+   min-width: 640px;   
+	width:95%;
+ }
+
+body > header > img {	
+	width: 100%;	
+	height: auto; /*Maintain image aspect ratio*/
+}
+/*Set width for each navigation button to 20% of body width and float to left*/
+body > header > nav.horizontalNavigation li { 
+	width:20%; 
+	float:left;	
+}
+
+/*Columns section, left is for image, right is for text*/
+section#leftColumn  {	
+	clear:left;
+	float: left;
+	padding-top:3em;
+	padding-right:0;
+	padding-bottom:2.95em;
+	padding-left:3em;
+	width: 45%;
+	background-color:hsl(132,11%,91%);	
+}
+
+section#leftColumn img {
+	width:100%;	
+}
+
+section#rightColumn {		
+	float: left;
+	padding-top:1.9em;
+	padding-right:3.5em;
+	padding-bottom:2.35em;
+	padding-left:3.4em;
+	width: 55%;		
+	background-color:hsl(132,11%,91%);
+	overflow:hidden;
+	min-height:71.5vh;
+}
+
+section#rightColumn p {
+	padding-top:1em;	
+}
+
+/* Footer section is floated to the right except fot the copy right section which is
+	floated to the left.*/
+footer {	
+	background-color: hsla(72, 24%, 20%, 70%);
+	clear: left;		
+}
+
+footer::after { /*Prevent container collapse*/
+	clear: both;
+	content: "";
+	display: table;	
+}
+
+section#contactInfo  {
+	float: right;
+	width: 34%;
+	padding-left:5.5%;	
+}
+
+footer > nav.verticalNavigation {
+	float: right;	
+	width: 22%;
+	padding-left:12%;	
+	display:block;
+}
+
+footer > nav.verticalNavigation li {
+	text-align:left;	
+}
+
+ footer > nav.verticalNavigation img {
+	 display:inline;
+ }
+section#gotoButton {
+	padding-top:1.5em;
+	padding-left:10.5em;
+}
+/*Layout setting for the go-to-button*/
+.btn {
+	border: 0.5px hsla(38,42%,70%, 70%);
+	background-color: hsla(38,42%,70%, 70%);
+	padding: 0.5em 1.5em;	
+	cursor: pointer;
+	display: inline-block;
+	border-radius:30px;
+}
+/* On mouse-over */
+.btn:hover {
+	background: hsla(38,42%,70%,90%);
+}
+
+section#copyRight {
+	clear:both;
+	float:left;
+	padding-left:5.7%;	
+}
