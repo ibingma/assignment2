@@ -110,6 +110,10 @@ body > header > nav.horizontalNavigation li { /*adjust home navigation button to
 
 /* Color Palettes Section - Second Row */
 	/* First Column - Image */
+.row.colorPalettes .col-1-2:first-child {
+	
+	
+}	
 .row.colorPalettes .col-1-2 img {
 	width:100%;
 	padding-top:2.7em;
@@ -118,6 +122,8 @@ body > header > nav.horizontalNavigation li { /*adjust home navigation button to
 	padding-left:5.5em;
 	width: 100%;
 	height: auto; /* Maintains aspect ratio */
+	
+	
 }
 	/* Second Column - Text Layout */
 .row.colorPalettes .col-1-2:nth-child(2) { 
@@ -125,6 +131,7 @@ body > header > nav.horizontalNavigation li { /*adjust home navigation button to
 	padding-right:2em;
 	padding-bottom:2em;
 	padding-left:2.5em;	
+	
 }
 
 /* Typography Section - Third Row */
@@ -137,10 +144,23 @@ body > header > nav.horizontalNavigation li { /*adjust home navigation button to
 }
 	/* Second Column - Image Section */
 .row.fontSection .col-1-2 img {
-	width:100%;
-	padding-top:6em;
-	padding-right:2em;
-	padding-left:2.5em;
+	width:90%;
+	padding-top:2em;
+	padding-right:3.1em;
+	padding-left:2.8em;
+	padding-bottom:2em;	
+	margin-top: 5em;
+	margin-right:0;
+	margin-left: 2em;
+	
+	/* Border styling for the image */
+	box-sizing:border-box;
+	width:28em;	
+	border-width:0.3em ;
+	border-color:hsl(72, 24%, 20%);
+	border-style:solid;
+	border-radius:10px;
+		
 }
 
 /* Footer Section - Fourth Row */

@@ -34,8 +34,8 @@ section#leftColumn  {
 	clear:left;
 	float: left;
 	padding-top:3em;
-	padding-right:0;
-	padding-bottom:2.95em;
+	padding-right:1em;
+	padding-bottom:4.3em;
 	padding-left:3em;
 	width: 45%;
 	background-color:hsl(132,11%,91%);	
@@ -43,6 +43,7 @@ section#leftColumn  {
 
 section#leftColumn img {
 	width:100%;	
+	box-shadow:rgb(51,51,51) -15px 0px 25px;
 }
 
 section#rightColumn {		
