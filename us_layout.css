@@ -1,0 +1,55 @@
+@charset "utf8";
+/*
+	This file contain the layout setting used by the another_page.html. The layout concept is 
+	based on the grid system.
+	
+	Author: Ibing Maharlika
+   Date: 9/23/24
+	
+*/
+html {
+	height: 100%;			
+	
+}
+
+body {
+	min-height:100%; /*set minimum height to match browser window full height*/
+	max-width: 1024px;
+   min-width: 640px;   
+	width:95%;
+ }
+
+body > header > img {
+	width: 100%;	
+	height: auto;
+	position:relative;	
+	top:0;
+	margin:0;
+	padding:0;
+	opacity:0.9;
+}
+
+h2 {
+	padding-top:1em;
+	padding-bottom:0.2em;
+}
+body > ol > li {
+	padding-top:0.5em;
+	
+}
+body > ol > li > ul >li{
+	padding-top:0.5em;
+}
+
+body > header > nav.horizontalNavigation li { /*adjust home navigation button to each about 17% of body width*/
+	width:20%;
+	float:left;	
+	background-color:hsla(132, 4%,70%, 70%);
+}
+
+footer {		
+	margin-top:20px;
+	background-color: hsla(72, 24%, 20%, 70%);
+	padding:1em;
+	padding-left:3.2em;	
+}

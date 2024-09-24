@@ -15,14 +15,13 @@ article, aside, details, dl, figcaption, figure, footer, header, hgroup, main, n
 	display: block;
 }
 
-
 /* =============================================
 	Default colors, margins and sizing
    =============================================
 */
 
-html {	
-	background-color:hsl(132, 4%,70%);	
+html {		
+	background-color:hsl(132, 4%,70%);		
 }
 
 body { /*Center the body position*/
@@ -51,7 +50,7 @@ nav.horizontalNavigation li {
 }
 
 /* Right Column Text Setting */
-section#rightColumn h1 {	
+#rightColumn h1 {	
 	font-family:'Roboto', san-serif;
 	color: rgb(78,88,54);
 	/*font-size:2.5em;	*/
@@ -59,7 +58,7 @@ section#rightColumn h1 {
 	
 }
 
-section#rightColumn p {	
+#rightColumn p {	
 	font-family:'Roboto', san-serif;
 	color: rgb(0, 0,0);
 	/*font-size: 1.2em;*/
@@ -74,7 +73,7 @@ body > footer {
 	color:hsl(132,11%,70%);
 }
 
-body > footer h1 {   
+body > footer h2 {   
 	color:hsl(38,42%,70%);	
    font-size: 1.1em;
 	font-weight: normal;
@@ -82,11 +81,6 @@ body > footer h1 {
    margin: 1em 0 0.5em 0.6em;
 }
 
-section#copyRight {
-	text-align: center;	
-	font-size:0.9em;	
-}
-	
 	/* Footer Vertical Navigation Styles */
 nav.verticalNavigation ul {
    margin-left: 0.7em;
@@ -108,14 +102,18 @@ nav.verticalNavigation a:active {
    text-decoration: underline;
 }
 
-.btn {
+.btn.goto {
 	color:hsla(72, 24%, 20%, 70%);
 	font-size: 1.1em;
+	text-decoration: none;
 }
 
-	/* Footer Contact Info Styles */
-section#contactInfo p {
+#contactInfo p {
    line-height: 1.5em;
    margin-left: 0.8em;	
 	
 }   
+#copyRight {
+	text-align: center;	
+	font-size:0.9em;	
+}
